@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomXibView" customModule="CG_CustomXibView" customModuleProvider="target">
+            <connections>
+                <outlet property="desL" destination="gbV-iV-snL" id="HWo-GS-eXV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJc-me-3xH">
+                    <rect key="frame" x="0.0" y="0.0" width="124" height="137"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="HrN-2M-JMN"/>
+                        <constraint firstAttribute="height" constant="137" id="UsT-pL-yID"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-270" minY="120" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="点我就show给你看" image="girl01">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="Fzh-f9-PM9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNe-H1-W3o">
+                    <rect key="frame" x="146.5" y="0.0" width="124" height="137"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="HEs-Pp-esO"/>
+                        <constraint firstAttribute="height" constant="137" id="KrJ-Oi-miT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-330" minY="120" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="点我就show给你看" image="girl02">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="d4T-0E-vaZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEv-1J-TjY">
+                    <rect key="frame" x="278" y="0.0" width="139" height="137"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="139" id="hhH-iO-jak"/>
+                        <constraint firstAttribute="height" constant="137" id="kzw-gO-U6M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-430" minY="120" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="点我就show给你看" image="girl03">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="xyN-V7-fkI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个自定义view的frame是可以根据自己需要设置的" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-iV-snL">
+                    <rect key="frame" x="7" y="145" width="310" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UNe-H1-W3o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BNM-67-Als"/>
+                <constraint firstItem="gbV-iV-snL" firstAttribute="top" secondItem="KJc-me-3xH" secondAttribute="bottom" constant="8" id="XAD-8b-Vef"/>
+                <constraint firstItem="MEv-1J-TjY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XAH-Ad-Ouh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gbV-iV-snL" secondAttribute="trailing" constant="100" id="dHG-aF-wOK"/>
+                <constraint firstItem="UNe-H1-W3o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ggP-oH-G4X"/>
+                <constraint firstItem="gbV-iV-snL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="kSN-eJ-ExB"/>
+                <constraint firstItem="MEv-1J-TjY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="phD-Eq-nHe"/>
+                <constraint firstItem="KJc-me-3xH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sar-Nw-59m"/>
+                <constraint firstItem="KJc-me-3xH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tb6-cB-M2F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-224.5" y="-253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="girl01" width="256" height="372"/>
+        <image name="girl02" width="330" height="324"/>
+        <image name="girl03" width="418" height="352"/>
+    </resources>
+</document>
